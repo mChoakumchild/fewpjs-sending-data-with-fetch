@@ -1,10 +1,10 @@
 // Add your code here
 
 
-// let formData = {
-//     name: "Steve",
-//     email: "steve@steve.com"
-//     };
+//let formData = {
+  //  name: "Steve",
+   // email: "steve@steve.com"
+   // };
     
 // let configObj = {
 //   method: "POST",
@@ -22,10 +22,10 @@
 
 function submitData (nameU, emailU){
  
-let formData = {
-  name: `${nameU}`,
-  email: `${emailU}`
-  }
+ let formData = {
+   name: `${nameU}`,
+   email: `${emailU}`
+   }
   
 let configObj = {
 method: "POST",
@@ -37,7 +37,7 @@ body: JSON.stringify(formData)
 
   let body = document.querySelector('body');
 
-  fetch("http://localhost:3000/users", configObj)
+  return fetch("http://localhost:3000/users", configObj)
     .then(resp => resp.json())
     .then(message => {
       let elementID = document.createElement('li');
@@ -53,7 +53,7 @@ body: JSON.stringify(formData)
     })
     // .then( res => res.json())
     // .then(data => console.log(data))
-    
+   
 }
 
 
